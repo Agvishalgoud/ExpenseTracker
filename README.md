@@ -1,4 +1,7 @@
-#Expense Tracker
+🔹 Demo: 🔗 https://expensetrackerbyvishal.netlify.app
+
+
+# EXPENSE TRACKER 
 A simple and interactive Expense Tracker that helps users manage their spending efficiently. Built using HTML5, CSS3, JavaScript, Chart.js, and Font Awesome.
 
 Features
