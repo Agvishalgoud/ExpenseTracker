@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Expense Tracker 💰</h1>
+            <button id="darkModeToggle" class="mode-btn">🌙 Dark Mode</button>
+        </div>
+        
+        <div class="input-group">
+            <input type="number" id="amount" placeholder="Amount (₹)" min="0" step="0.01">
+            <select id="category">
+                <option value="">Select Category</option>
+                <option>Food</option>
+                <option>Transport</option>
+                <option>Housing</option>
+                <option>Entertainment</option>
+            </select>
+            <input type="date" id="date">
+            <input type="text" id="description" placeholder="Description">
+        </div>
+        <div id="errorMsg" class="error">Please fill all fields</div>
+        <button onclick="addExpense()" id="addBtn">Add Expense ➕</button>
+
+        <div class="total">Total: ₹<span id="totalAmount">0</span></div>
+
+        <div class="current-expenses">
+            <h2>Current Expenses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="expenseList"></tbody>
+            </table>
+        </div>
+
+        <button onclick="window.location.href='history.html'" id="checkHistoryBtn">Check History 📜</button>
+
+        <div id="chartContainer">
+            <canvas id="chart"></canvas>
+        </div>
+
+        <div class="footer-text">DEVELOPED BY AG VISHAL GOUDS</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
