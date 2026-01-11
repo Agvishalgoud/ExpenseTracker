@@ -1,4 +1,4 @@
-🔹 Demo: 🔗 https://expensetrackerbyvishal.netlify.app
+
 
 
 # EXPENSE TRACKER 
